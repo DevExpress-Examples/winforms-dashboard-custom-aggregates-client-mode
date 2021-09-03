@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource Name="SQL Data Source 1" ComponentName="dashboardSqlDataSource1" DataProcessingMode="Client">
+      <Connection Name="nwind" ProviderKey="InMemorySetFull">
+        <Parameters>
+          <Parameter Name="database" Value="..\..\Data\nwind.xml" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+        </Parameters>
+      </Connection>
+      <Query Type="SelectQuery" Name="Orders">
+        <Tables>
+          <Table Name="Orders" X="30" Y="30" Width="125" Height="343" />
+          <Table Name="[Order Details]" X="185" Y="30" Width="125" Height="163" />
+          <Table Name="Customers" X="340" Y="30" Width="125" Height="283" />
+          <Relation Type="Inner" Parent="Orders" Nested="[Order Details]">
+            <KeyColumn Parent="OrderID" Nested="OrderID" />
+          </Relation>
+          <Relation Type="Inner" Parent="Orders" Nested="Customers">
+            <KeyColumn Parent="CustomerID" Nested="CustomerID" />
+          </Relation>
+        </Tables>
+        <Columns>
+          <Column Table="Orders" Name="OrderDate" />
+          <Column Table="[Order Details]" Name="UnitPrice" />
+          <Column Table="[Order Details]" Name="Quantity" />
+          <Column Table="Customers" Name="CustomerID" />
+          <Column Table="Customers" Name="CompanyName" />
+          <Column Table="Customers" Name="ContactName" />
+          <Column Table="Customers" Name="ContactTitle" />
+          <Column Table="Customers" Name="Address" />
+          <Column Table="Customers" Name="City" />
+          <Column Table="Customers" Name="Region" />
+          <Column Table="Customers" Name="PostalCode" />
+          <Column Table="Customers" Name="Country" />
+          <Column Table="Customers" Name="Phone" />
+          <Column Table="Customers" Name="Fax" />
+        </Columns>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="Orders">
+            <Field Name="OrderDate" Type="DateTime" />
+            <Field Name="UnitPrice" Type="Decimal" />
+            <Field Name="Quantity" Type="Int16" />
+            <Field Name="CustomerID" Type="String" />
+            <Field Name="CompanyName" Type="String" />
+            <Field Name="ContactName" Type="String" />
+            <Field Name="ContactTitle" Type="String" />
+            <Field Name="Address" Type="String" />
+            <Field Name="City" Type="String" />
+            <Field Name="Region" Type="String" />
+            <Field Name="PostalCode" Type="String" />
+            <Field Name="Country" Type="String" />
+            <Field Name="Phone" Type="String" />
+            <Field Name="Fax" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" DbCommandTimeout="300" />
+      <CalculatedFields>
+        <CalculatedField Name="Contact Names by Countries" Expression="StringConcat([ContactName])" DataType="Auto" DataMember="Orders" />
+      </CalculatedFields>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Aggregated Contact Names" DataSource="dashboardSqlDataSource1" DataMember="Orders">
+      <DataItems>
+        <Dimension DataMember="Country" SortOrder="Descending" DefaultId="DataItem0" />
+        <Measure DataMember="Contact Names by Countries" SummaryType="Count" DefaultId="DataItem1" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn>
+          <Dimension DefaultId="DataItem0" />
+        </GridDimensionColumn>
+        <GridMeasureColumn Name="Contact Names by Countries">
+          <Measure DefaultId="DataItem1" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem1" Weight="24.969987995198078" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
