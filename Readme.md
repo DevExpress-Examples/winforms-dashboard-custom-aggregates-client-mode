@@ -5,7 +5,7 @@
 <!-- default badges end -->
 
 
-# Dashboard for WinForms - How to aggregate data by string concatenation
+# Dashboard for WinForms - How to Aggregate Data by String Concatenation
 
 This example shows how to aggregate your data by string concatenation.
 
