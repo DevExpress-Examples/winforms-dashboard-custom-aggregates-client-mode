@@ -1,11 +1,10 @@
 ﻿using DevExpress.Data.Filtering;
 using DevExpress.DataAccess.Criteria;
-using DevExpress.DataAccess.Native.ExpressionEditor;
 using System;
 using System.Collections.Generic;
 
 namespace Dashboard_StringConcatAggregate {
-    class StringConcatFunction : ICustomAggregateFunction, ICustomFunctionOperatorBrowsable, ICustomFunctionOperatorCategory {
+    class StringConcatFunction : ICustomAggregateFunction, ICustomFunctionOperatorBrowsable {
         public string Name => "StringConcat";
 
         public int MinOperandCount => 1;
@@ -17,14 +16,12 @@ namespace Dashboard_StringConcatAggregate {
 
         public FunctionCategory Category => DevExpress.Data.Filtering.FunctionCategory.Text;
 
-        public string FunctionCategory => "Aggregate";
-
-        public Type CreateEvaluationState(Type inputType) {
-            return typeof(StringConcatState);
-        }
-
         public object Evaluate(params object[] operands) {
             throw new NotImplementedException();
+        }
+
+        public Type GetAggregationContextType(Type inputType) {	
+            return typeof(StringConcatState);	
         }
 
         public bool IsValidOperandCount(int count) {
