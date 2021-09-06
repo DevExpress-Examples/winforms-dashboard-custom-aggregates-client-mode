@@ -13,7 +13,6 @@ namespace Dashboard_StringConcatAggregate {
 
         public string Description => "Takes strings, aggregates by input value and displays comma separated.";
 
-
         public FunctionCategory Category => DevExpress.Data.Filtering.FunctionCategory.Text;
 
         public object Evaluate(params object[] operands) {
