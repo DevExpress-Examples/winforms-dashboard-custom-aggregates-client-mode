@@ -9,8 +9,8 @@
 
 This example shows how to aggregate your data by string concatenation.
 
-## Files to look at
 <!-- default file list -->
+## Files to Look At
 * [Form1.cs](./CS/Dashboard_StringConcatAggregate/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_StringConcatAggregate/Form1.vb))
 * [StringConcatFunction.cs](./CS/Dashboard_StringConcatAggregate/StringConcatFunction.cs) (VB: [StringConcatFunction.vb](./VB/Dashboard_StringConcatAggregate/StringConcatFunction.vb))
 <!-- default file list end -->
