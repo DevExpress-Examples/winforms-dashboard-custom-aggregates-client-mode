@@ -13,6 +13,7 @@ This example shows how to aggregate your data by string concatenation.
 ## Files to Look At
 * [Form1.cs](./CS/Dashboard_StringConcatAggregate/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_StringConcatAggregate/Form1.vb))
 * [StringConcatFunction.cs](./CS/Dashboard_StringConcatAggregate/StringConcatFunction.cs) (VB: [StringConcatFunction.vb](./VB/Dashboard_StringConcatAggregate/StringConcatFunction.vb))
+* [Program.cs](./CS/Dashboard_StringConcatAggregatel/Program.cs#L24) (VB: [Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L24))
 <!-- default file list end -->
 
 ## Overview
@@ -26,47 +27,10 @@ The following expressions aggregates data by string concatenation for _СontactN
 | --- | --- |
 | Contact names by countries | ``` StringConcat([ContactName]) ``` |
 
-Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project. The following code snippet shows how to register the numeric group interval's function: 
+Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project.
 
-[Program.cs](./CS/Dashboard_StringConcatAggregatel/Program.cs):
-```csharp
-using System;
-using System.Windows.Forms
-using DevExpress.Data.Filtering;
+View File: [Program.cs](./CS/Dashboard_StringConcatAggregatel/Program.cs#L24) (VB: [Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L24))
 
-namespace Dashboard_StringConcatAggregate {
-    static class Program {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main() {
-        // ...
-            CriteriaOperator.RegisterCustomFunction(new StringConcatFunction());
-            Application.Run(new Form1());  
-        }
-    }
-}
-```
-[Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb):
-```vb
-Imports System.Windows.Forms using DevExpress.Data.Filtering
-
-Namespace Dashboard_StringConcatAggregate
-	Friend Module Program
-		''' <summary>
-		''' The main entry point for the application.
-		''' </summary>
-		<STAThread>
-		Sub Main()
-		' ...
-			CriteriaOperator.RegisterCustomFunction(New StringConcatFunction())
-			Application.Run(New Form1())
-		End Sub
-	End Module
-End Namespace
-
-```
 
 ## Documentation
 
