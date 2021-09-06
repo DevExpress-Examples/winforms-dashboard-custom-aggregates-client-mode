@@ -13,7 +13,7 @@ This example shows how to aggregate your data by string concatenation.
 ## Files to Look At
 * [Form1.cs](./CS/Dashboard_StringConcatAggregate/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_StringConcatAggregate/Form1.vb))
 * [StringConcatFunction.cs](./CS/Dashboard_StringConcatAggregate/StringConcatFunction.cs) (VB: [StringConcatFunction.vb](./VB/Dashboard_StringConcatAggregate/StringConcatFunction.vb))
-* [Program.cs](./CS/Dashboard_StringConcatAggregatel/Program.cs#L24) (VB: [Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L24))
+* [Program.cs](./CS/Dashboard_StringConcatAggregate/Program.cs#L24) (VB: [Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L24))
 <!-- default file list end -->
 
 ## Overview
@@ -29,7 +29,7 @@ The following expressions aggregates data by string concatenation for _СontactN
 
 Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project.
 
-View File: [Program.cs](./CS/Dashboard_StringConcatAggregatel/Program.cs#L24) (VB: [Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L24))
+View File: [Program.cs](./CS/Dashboard_StringConcatAggregate/Program.cs#L24) (VB: [Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L24))
 
 
 ## Documentation
