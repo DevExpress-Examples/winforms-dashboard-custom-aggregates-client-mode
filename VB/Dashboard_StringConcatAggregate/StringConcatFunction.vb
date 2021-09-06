@@ -1,12 +1,11 @@
 ﻿Imports DevExpress.Data.Filtering
 Imports DevExpress.DataAccess.Criteria
-Imports DevExpress.DataAccess.Native.ExpressionEditor
 Imports System
 Imports System.Collections.Generic
 
 Namespace Dashboard_StringConcatAggregate
 	Friend Class StringConcatFunction
-		Implements ICustomAggregateFunction, ICustomFunctionOperatorBrowsable, ICustomFunctionOperatorCategory
+		Implements ICustomAggregateFunction, ICustomFunctionOperatorBrowsable
 
 		Public ReadOnly Property Name() As String Implements DevExpress.Data.Filtering.ICustomFunctionOperator.Name
 			Get
@@ -32,26 +31,19 @@ Namespace Dashboard_StringConcatAggregate
 			End Get
 		End Property
 
-
 		Public ReadOnly Property Category() As FunctionCategory Implements ICustomFunctionOperatorBrowsable.Category
 			Get
 				Return DevExpress.Data.Filtering.FunctionCategory.Text
 			End Get
 		End Property
 
-		Public ReadOnly Property FunctionCategory() As String Implements ICustomFunctionOperatorCategory.FunctionCategory
-			Get
-				Return "Aggregate"
-			End Get
-		End Property
-
-		Public Function CreateEvaluationState(ByVal inputType As Type) As Type Implements ICustomAggregateFunction.CreateEvaluationState
-			Return GetType(StringConcatState)
-		End Function
-
 		Public Function Evaluate(ParamArray ByVal operands() As Object) As Object Implements DevExpress.Data.Filtering.ICustomFunctionOperator.Evaluate
 			Throw New NotImplementedException()
 		End Function
+
+		Public Function GetAggregationContextType(ByVal inputType As Type) As Type
+			Return GetType(StringConcatState)
+   		End Function
 
 		Public Function IsValidOperandCount(ByVal count As Integer) As Boolean Implements ICustomFunctionOperatorBrowsable.IsValidOperandCount
 			Return count <= MaxOperandCount AndAlso count >= MinOperandCount
