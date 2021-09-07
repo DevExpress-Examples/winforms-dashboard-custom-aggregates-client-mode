@@ -1,5 +1,5 @@
 ﻿Imports DevExpress.Data.Filtering
-Imports DevExpress.DataAccess.Criteria
+Imports DevExpress.DataProcessing.Criteria
 Imports System
 Imports System.Collections.Generic
 
