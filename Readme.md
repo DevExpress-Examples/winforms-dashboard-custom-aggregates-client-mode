@@ -20,6 +20,7 @@ This example shows how to use string concatenation to aggregate data in a client
 
 In this example, the [Grid](https://docs.devexpress.com/Dashboard/15150/winforms-dashboard/winforms-designer/create-dashboards-in-the-winforms-designer/dashboard-item-settings/grid) dashboard item displays _СontactName_ values concatenated by country. 
 
+![aggregated-contact-names](images/custom-aggregate-function.png)
 
 The following expressions uses string concatenation to aggregates data for _СontactName_ values:
 
