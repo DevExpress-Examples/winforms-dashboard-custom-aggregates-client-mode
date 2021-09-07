@@ -22,7 +22,7 @@ In this example, the [Grid](https://docs.devexpress.com/Dashboard/15150/winforms
 
 ![aggregated-contact-names](images/custom-aggregate-function.png)
 
-The following expressions uses string concatenation to aggregates data for _СontactName_ values:
+The following expression uses string concatenation to aggregates data for _СontactName_ values:
 
 | Calculated Field | Expression |
 | --- | --- |
