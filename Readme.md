@@ -27,9 +27,9 @@ The following expressions aggregates data by string concatenation for _СontactN
 | --- | --- |
 | Contact names by countries | ``` StringConcat([ContactName]) ``` |
 
-Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project.
+Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/CoreLibraries/DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)) method to register a custom function in your project (see [Program.cs](./CS/Dashboard_StringConcatAggregate/Program.cs#L24)/[Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L24)).
 
-View File: [Program.cs](./CS/Dashboard_StringConcatAggregate/Program.cs#L24) (VB: [Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L24))
+
 
 
 ## Documentation
