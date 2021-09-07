@@ -11,7 +11,7 @@ namespace Dashboard_StringConcatAggregate {
 
         public int MaxOperandCount => 1;
 
-        public string Description => "Takes strings, aggregates by input value and displays comma separated.";
+        public string Description => "Takes strings, aggregates by input value, and displays them separated by commas.";
 
         public FunctionCategory Category => DevExpress.Data.Filtering.FunctionCategory.Text;
 
