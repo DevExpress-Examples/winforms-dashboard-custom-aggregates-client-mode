@@ -27,7 +27,7 @@ Namespace Dashboard_StringConcatAggregate
 
 		Public ReadOnly Property Description() As String Implements ICustomFunctionOperatorBrowsable.Description
 			Get
-				Return "Takes strings, aggregates by input value and displays comma separated."
+				Return "Takes strings, aggregates by input value, and displays them separated by commas."
 			End Get
 		End Property
 
