@@ -1,5 +1,5 @@
 ﻿using DevExpress.Data.Filtering;
-using DevExpress.DataAccess.Criteria;
+using DevExpress.DataProcessing.Criteria;
 using System;
 using System.Collections.Generic;
 
