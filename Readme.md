@@ -7,7 +7,7 @@
 
 # Dashboard for WinForms - How to Aggregate Data by String Concatenation
 
-This example shows how to aggregate your data by string concatenation.
+This example shows how to use string concatenation to aggregate data in a client mode.
 
 <!-- default file list -->
 ## Files to Look At
