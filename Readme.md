@@ -7,7 +7,7 @@
 
 # Dashboard for WinForms - How to Aggregate Data by String Concatenation
 
-This example shows how to use string concatenation to aggregate data in a client mode.
+This example shows how to use string concatenation to aggregate data in client mode.
 
 <!-- default file list -->
 ## Files to Look At
@@ -22,7 +22,7 @@ In this example, the [Grid](https://docs.devexpress.com/Dashboard/15150/winforms
 
 ![aggregated-contact-names](images/custom-aggregate-function.png)
 
-The following expression uses string concatenation to aggregates data for _СontactName_ values:
+The following expression uses string concatenation to aggregate data for _СontactName_ values:
 
 | Calculated Field | Expression |
 | --- | --- |
