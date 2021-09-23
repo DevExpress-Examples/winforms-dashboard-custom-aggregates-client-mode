@@ -41,10 +41,6 @@ Namespace Dashboard_StringConcatAggregate
 			Throw New NotImplementedException()
 		End Function
 
-		Public Function GetAggregationContextType(ByVal inputType As Type) As Type
-			Return GetType(StringConcatState)
-   		End Function
-
 		Public Function IsValidOperandCount(ByVal count As Integer) As Boolean Implements ICustomFunctionOperatorBrowsable.IsValidOperandCount
 			Return count <= MaxOperandCount AndAlso count >= MinOperandCount
 		End Function
@@ -55,6 +51,10 @@ Namespace Dashboard_StringConcatAggregate
 
 		Public Function ResultType(ParamArray ByVal operands() As Type) As Type Implements DevExpress.Data.Filtering.ICustomFunctionOperator.ResultType
 			Return GetType(String)
+		End Function
+
+		Private Function GetAggregationContextType(inputType As Type) As Type Implements ICustomAggregateFunction.GetAggregationContextType
+			Return GetType(StringConcatState)
 		End Function
 	End Class
 
