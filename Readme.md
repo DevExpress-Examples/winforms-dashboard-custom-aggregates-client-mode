@@ -13,7 +13,7 @@ This example shows how to use string concatenation to aggregate data in client m
 ## Files to Look At
 * [Form1.cs](./CS/Dashboard_StringConcatAggregate/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_StringConcatAggregate/Form1.vb))
 * [StringConcatFunction.cs](./CS/Dashboard_StringConcatAggregate/StringConcatFunction.cs) (VB: [StringConcatFunction.vb](./VB/Dashboard_StringConcatAggregate/StringConcatFunction.vb))
-* [Program.cs](./CS/Dashboard_StringConcatAggregate/Program.cs#L24) (VB: [Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L24))
+* [Program.cs](./CS/Dashboard_StringConcatAggregate/Program.cs#L23) (VB: [Program.vb](./VB/Dashboard_StringConcatAggregate/Program.vb#L23))
 <!-- default file list end -->
 
 ## Overview
