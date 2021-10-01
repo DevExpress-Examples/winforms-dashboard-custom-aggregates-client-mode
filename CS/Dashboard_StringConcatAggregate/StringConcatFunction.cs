@@ -1,10 +1,11 @@
 ﻿using DevExpress.Data.Filtering;
+using DevExpress.DataAccess.ExpressionEditor;
 using DevExpress.DataProcessing.Criteria;
 using System;
 using System.Collections.Generic;
 
 namespace Dashboard_StringConcatAggregate {
-    class StringConcatFunction : ICustomAggregateFunction, ICustomFunctionOperatorBrowsable {
+    class StringConcatFunction : ICustomAggregateFunction, ICustomFunctionOperatorBrowsable, ICustomFunctionCategory {
         public string Name => "StringConcat";
 
         public int MinOperandCount => 1;
@@ -14,6 +15,8 @@ namespace Dashboard_StringConcatAggregate {
         public string Description => "Takes strings, aggregates by input value, and displays them separated by commas.";
 
         public FunctionCategory Category => DevExpress.Data.Filtering.FunctionCategory.Text;
+
+        public string FunctionCategory => "Aggregate";
 
         public object Evaluate(params object[] operands) {
             throw new NotImplementedException();
