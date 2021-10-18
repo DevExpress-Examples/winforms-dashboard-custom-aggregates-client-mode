@@ -4,8 +4,7 @@ Imports DevExpress.DataProcessing.Criteria
 
 Namespace Dashboard_StringConcatAggregate
     Friend Class StringConcatFunction
-        Implements ICustomAggregateFunction, ICustomFunctionOperatorBrowsable, 
-        ICustomFunctionCategory
+        Implements ICustomAggregateFunction, ICustomFunctionOperatorBrowsable, ICustomFunctionCategory
         Public ReadOnly Property Name() As String Implements DevExpress.Data.Filtering.ICustomFunctionOperator.Name
             Get
                 Return "StringConcat"
