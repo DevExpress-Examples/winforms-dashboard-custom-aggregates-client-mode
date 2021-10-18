@@ -5,7 +5,8 @@ using System;
 using System.Collections.Generic;
 
 namespace Dashboard_StringConcatAggregate {
-    class StringConcatFunction : ICustomAggregateFunction, ICustomFunctionOperatorBrowsable, ICustomFunctionCategory {
+    class StringConcatFunction : ICustomAggregateFunction, ICustomFunctionOperatorBrowsable, 
+        ICustomFunctionCategory {
         public string Name => "StringConcat";
 
         public int MinOperandCount => 1;
