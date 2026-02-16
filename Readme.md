@@ -47,7 +47,7 @@ Call the [CriteriaOperator.RegisterCustomFunction](https://docs.devexpress.com/C
 - [Dashboard for WinForms - How to Calculate Fiscal Functions from Date-Time Data Fields](https://github.com/DevExpress-Examples/How-to-calculate-fiscal-functions-for-date-time-data-fields)
 - [Dashboard for WinForms - How to Aggregate Data by the Field's First Value](https://github.com/DevExpress-Examples/winforms-dashboard-custom-aggregates-server-mode)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-dashboard-custom-aggregates-client-mode&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-dashboard-custom-aggregates-client-mode&~~~was_helpful=no)
 
